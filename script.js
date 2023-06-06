@@ -1,9 +1,9 @@
 function calcularMedia(){
-    let primeiro = parseInt(document.getElementById("primeiro").value)
-    let segundo = parseInt(document.getElementById("segundo").value)
-    let terceiro = parseInt(document.getElementById("terceiro").value)
+    let numero1 = Number(document.getElementById("primeiro").value)
+    let numero2 = Number(document.getElementById("segundo").value)
+    let numero3 = Number(document.getElementById("terceiro").value)
 
-    let media = (primeiro + segundo + terceiro) / 3
+    let media = (numero1 + numero2 + numero3) / 3
 
-    let resultado = document.getElementById("resultado").textContent = media
+    document.getElementById("resultado").innerHTML = '<p>Resultado: '+ media.toFixed(2) +'<p/>'
 }
