@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <section class="container">
+        <h1 class="container__titulo">Cálculo de Média</h1>
+        <label class="container__label">Primero Número</label>
+        <input type="text" id="primeiro" class="container__text">
+        <label class="container__label">Segundo Número</label>
+        <input type="text" id="segundo" class="container__text">
+        <label class="container__label">Terceiro Número</label>
+        <input type="text" id="terceiro" class="container__text">
+        <div class="container__botao">
+            <input type="button" class="botao" value="Calcular" onclick="calcularMedia()">
+        </div>
+    </section>
+    <section class="resultado__section">
+        <p class="resultado__texto">Resultado:&nbsp;</p>
+        <p class="resultado__texto" id="resultado" ></p>
+    </section>
+</body>
+</html>
