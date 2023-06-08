@@ -15,5 +15,21 @@ function calcularIMC(){
 
     alert("Seu IMC: " + imc.toFixed(2));
 
-    let resultado = document.getElementById("resultadoImc").innerHTML = "<br/><p class='resultado__texto'>Seu peso: " + peso + "</p><br/><p class='resultado__texto'>Sua altura: " + altura + "</p><br/><p class='resultado__texto'>Seu IMC: " + imc.toFixed(2) + "</p>";
+    document.getElementById("resultadoImc").innerHTML = "<br/><p class='resultado__texto'>Seu peso: " + peso + "</p><br/><p class='resultado__texto'>Sua altura: " + 
+    altura + "</p><br/><p class='resultado__texto'>Seu IMC: " + imc.toFixed(2) + "</p>";
+}
+
+function cadastrarAluno(){
+    let aluno = new Object();
+    aluno.nome = prompt("Digite o nome do aluno");
+    aluno.idade = prompt("Digite a idade do aluno");
+    alert("Nome: " + aluno.nome + 
+    "\nIdade: " + aluno.idade);
+
+    let div = document.createElement("div");
+    let p = document.createElement("p");
+    p.innerHTML = `Nome do Aluno: ${aluno.nome} <br/>Idade do Aluno: ${aluno.idade}`;
+    p.setAttribute("class", "resultado__texto")
+    document.body.appendChild(div);
+    div.appendChild(p);
 }
