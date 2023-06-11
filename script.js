@@ -55,5 +55,12 @@ function calcularMediaPonderada(){
     let mediaPonderada = somaNotasEPesos / somaPesos;
 
     alert(`Média Ponderada: ${mediaPonderada.toFixed(2)}`);
-    
+}
+
+function concatenarNomes(){
+    let nome = prompt("Digite seu nome");
+    let sobrenome = prompt("Digite seu sobrenome");
+    let nomeCompleto = nome + " " + sobrenome;
+
+    alert(`Nome completo: ${nomeCompleto}`)
 }
