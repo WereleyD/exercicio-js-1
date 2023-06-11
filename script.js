@@ -33,3 +33,27 @@ function cadastrarAluno(){
     document.body.appendChild(div);
     div.appendChild(p);
 }
+
+function calcularMediaPonderada(){
+    //arrays para armazenas pesos e notas
+    let nota = [];
+    let peso = [];
+
+    //laço de repetição para armazenar os dados digitados
+    for (let i = 0; i < 3; i++) {
+        nota.push(Number(prompt(`Digite a nota nº ${i + 1}`)))
+        peso.push(Number(prompt(`Digite o peso`)))
+    }
+
+    //laço de repedição onde é feito o calculo da media ponderada
+    let somaNotasEPesos = 0;
+    let somaPesos = 0;
+    for (let j = 0; j < nota.length; j++) {
+        somaNotasEPesos += nota[j] * peso[j];
+        somaPesos += peso[j]
+    }
+    let mediaPonderada = somaNotasEPesos / somaPesos;
+
+    alert(`Média Ponderada: ${mediaPonderada.toFixed(2)}`);
+    
+}
